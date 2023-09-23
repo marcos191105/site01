@@ -1,13 +1,44 @@
-body{
-    background-color:whitesmoke;
-    
-}
-h1,h2,h3{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
-    color: rgb(25, 25, 197);
+/*Comentário*/ /* */
+/* reset do css para o nevegador*/
+*{ 
+   margin: 0;
+   padding: 0;
 }
 
-p{
-    color:rgb(137, 113, 177);
+body{
+    height: 100%; /*altura*/
+    width: 100%; /*largura*/
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-color: #061a46;
+    background: linear-gradient(#061a46 #0c2e75)
+ 
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+
+}
+.imagem img{
+    width: 150px;
+    border-radius: 200px;
+    margin-top: 100px;
+}
+.name{
+    margin-top: 10px;
+    justify-content:center;
+    display: flex;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.icon{ 
+    display: flex;
+    justify-content: center;
+}
+.email{
+    display: flex;
+    justify-content:center;
 }
