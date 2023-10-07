@@ -12,37 +12,36 @@ body{
     justify-content: center;
     background-repeat: no-repeat; /* no repeat */
     background-color: #6d7891;
-    background: linear-gradient(#061a46, #0c2e75, #061a46);
+    background: linear-gradient(black,#061a46, #0c2e75, #7851a9, rgb(25, 11, 77), black);
  
 }
 /* avatar */
 .imagem{
     display: flex;
     justify-content: center;
-
 }
 .imagem img{
     width: 150px;
     border-radius: 200px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .name{
     margin-top: 10px;
     justify-content:center;
     display: flex;
-    font-size: 32px;
+    font-size: 35px;
     font-weight: 600;
-    color: black;
+    color: white;
     font-family: 'Times New Roman', Times, serif;
 }
 /* topico redes socias */
 .redes-sociais{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex; /* organizar itens namesma linha */
     justify-content: center;
-    align-items: center; /* alinhamento de itens */
-   
+    align-items: center; /* alinhamento de itens */   
 }
 
 .icon,.email{ 
@@ -51,11 +50,10 @@ body{
     width: 35px;
     border-radius: 30px;
     transition: all 0.3s ease-out; /* voltar na explicação */
-    box-shadow: o 5px 5px rgba(0, 0, 0, .1 alpha);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .1 alpha);
     cursor: pointer;
     margin: 3px;
-    overflow: hidden;
-    
+    overflow: hidden;  
 }
 
 .icon i, .email i{
@@ -69,7 +67,6 @@ body{
     background-color: antiquewhite;
     color: black;
     cursor: pointer;
-
 }
 
 .icon span a{
@@ -81,7 +78,6 @@ body{
     color: #0c2e75;
     line-height: 35px;
     font-size: 17px;
-
 }
 
 .name-icon{
@@ -92,14 +88,12 @@ body{
     font-weight: 100;
     line-height: 35px;
     font-size: 17px;
-
 }
 
 .icon:hover{
     width: 130px;
     background-color:antiquewhite;
     border-radius: 20px;
-
 }
 
 .icon:nth-child(1):hover i{
@@ -116,23 +110,106 @@ body{
 }
 
 .email:hover i{
-    
+    background: black;
 }
+/*Fim css redes sociais*/
 
+/*Css texto*/
 .texto{
-    font-size: medium;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    margin-left: 500px;
-    margin-right: 500px;  
-}
-
-.langs{
     display: flex;
     justify-content: center;
+    align-items:center ;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+    width: 500px;
+    height: 150px;
+    padding: 90px 100px;
+    border-radius:20px;
+    color: white;
+    background-color: #0c2e75;
+    overflow: hidden; /*mantem organizado dentro da caixa*/
+    box-shadow: 0px 5px 5px #061a46; /*RGB-A = Alpha para transparencia */
+    cursor: pointer; /*Opcional*/
 }
-.langs img{
-    width: 150px;
-    border-radius: 100px;
-    margin-top: 100px;
+
+.titulo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    align-items: center;
+    text-align: center;
+}
+
+.linguagem{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.linguagem img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    margin: 5px;
+    border-radius: 200px;
+    box-shadow: 2px 2px 2px rgb(50, 50, 50);
+}
+
+.projetos{
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.projetos a{
+    text-decoration: none; /*mascara o link, uma forma de decorar o texto como por exemplo uma linha cortando o texto*/
+    color: white;
+}
+
+.item{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: white;
+    border: 5px solid #0c2e75;
+    border-radius: 50px;
+    width: 750px;
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(50, 50, 50, 0.5);
+    background: #0c2e75;
+    cursor: pointer;
+}
+
+#video{
+    padding: 10px;
+    margin: auto;
+    display: none;
+}
+
+#video.active{
+    display: block;
+}
+
+.rodape{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
 }
