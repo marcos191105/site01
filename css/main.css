@@ -39,7 +39,7 @@ body{
 .redes-sociais{
     margin-top: 20px;
     margin-bottom: 20px;
-    display: flex; /* organizar itens namesma linha */
+    display: flex; /* organizar itens na mesma linha */
     justify-content: center;
     align-items: center; /* alinhamento de itens */   
 }
@@ -123,7 +123,7 @@ body{
     margin-top: 15px;
     margin-bottom: 35px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    font-size: 19px;
     text-align: justify;
     width: 500px;
     height: 150px;
@@ -185,7 +185,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 22px;
     color: white;
-    border: 5px solid #0c2e75;
+    border: 3px solid #0c2e75;
     border-radius: 50px;
     width: 750px;
     height: 60px;
@@ -194,13 +194,18 @@ body{
     cursor: pointer;
 }
 
-#video{
+.item:hover{
+    transition: 0.5s;
+    background:rgb(1, 6, 48);
+}
+
+.video{
     padding: 10px;
     margin: auto;
     display: none;
 }
 
-#video.active{
+.video.active{
     display: block;
 }
 
@@ -213,3 +218,97 @@ body{
     margin-top: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+@media (max-width: 750px) {
+    .imagem img{
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+    .texto{
+        width: 290px;
+        height: 270px;
+    }
+    .item{
+        width: 350px;
+    }
+    .linguagem img{
+        width: 165px;
+    }
+    .video{
+        width: 330px;
+    }
+}
+@media (max-width: 500px) {
+    .imagem img{
+        width: 130px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+    .name{
+        font-size: 26px;
+    }
+    h1{
+        margin-top: 35px;
+        font-size: 24px;
+    }
+    .texto{
+        padding: 1.4rem 1.1rem;
+        width: 244px;
+        height: 270px;
+        margin-top: 30px;
+    }
+    .texto p{
+        font-size: 14px;
+    }
+    .texto p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video{
+        width: 270px;
+        height: 160px;
+    }
+    .item{
+        height: 40px;
+        width: 265px;
+    }
+    .linguagem img{
+        margin-top: 15px;
+        width: 120px;
+    }
+    .icon, .email{
+        height: 25px;
+        width: 25px;
+        border-radius: 30px;
+    }
+    .icon i, .email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+    }
+    .icon:hover {
+        width: 125px;
+    }
+    .rodape p {
+        font-size: 25px;
+        margin-top: 20px;
+        padding: 50px ;
+    }
+    .icon:hover{
+        width: 25px;
+    }
+    .icon span{
+        margin-right: 43px;
+        font-weight: 100;
+        line-height: 24px;
+        font-size: 15px;
+    }
+}
+
+
